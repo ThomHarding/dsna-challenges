@@ -18,6 +18,9 @@ class Queue {
         const temp = this.items[this.head];
         this.head++;
         return temp;
+        //i'm pretty sure this is o(1) runtime but how is this in memory complexity?
+        //it keeps track of the whole array even if you don't access it right?
+        //is there a way you can optimize this and make system know it's unused memory?
     }
 
     hasNext() {
