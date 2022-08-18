@@ -1,6 +1,5 @@
 function sayIt(words) {
     let sayString = words;
-    //4-6 is just in case the initial string is empty
     if (words === undefined) {
         return sayString;
     }
