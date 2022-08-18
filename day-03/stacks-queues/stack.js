@@ -15,18 +15,16 @@ class Stack {
       return this.items[this.items.length-1];
     }
 
-    
+
   }
   
-const stack = new Stack();
-stack.push('fox');
-stack.push('goose');
-stack.push('lizard');
-console.log(stack.pop()); // 'lizard'
-console.log(stack.peek()); // 'goose'
-console.log(stack.pop()); // 'goose'
-stack.push('llama');
-console.log(stack.pop()); // 'llama'
-console.log(stack.peek()); // 'fox'
-console.log(stack.pop()); // 'fox'
-console.log(stack.pop()); // null
+function reverseArray(arr) {
+    const reversedArr = new Stack();
+    while (arr.length > 0) {
+        reversedArr.push(arr.pop());
+    }
+    return reversedArr;
+}
+
+// console.log(reverseArray([12, 3, 5, 7]));
+//7, 5, 3, 12
