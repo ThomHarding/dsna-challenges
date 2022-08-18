@@ -3,7 +3,7 @@ Implement `sayIt`
 
 ## Challenge
 
-Write a chainable function that accepts on word per function call, but when called without arguments, 
+Write a chainable function that accepts one word per function call, but when called without arguments, 
 will report back all the previously passed words in order.
 
 ```js
